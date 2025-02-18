@@ -1,4 +1,4 @@
-All you have to do is replace the `[-]` with a `.` and run it to get the flag
+All you have to do is replace the `[-]` with a `.` and run it to get the flag. The reason why is because the `[-]` clears everything that is in the current position (the current character).
 
 ```
 >++++++++++[>++++++++++<-]>--..
@@ -29,4 +29,5 @@ All you have to do is replace the `[-]` with a `.` and run it to get the flag
 >++++++++++++[>++++++++++<-]>+++++.
 ```
 
+bbctf{bR41N_m4DN3s5_h4h4h4h4}
 This is the flag^^^

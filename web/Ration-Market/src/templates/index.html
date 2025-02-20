@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rations R Us</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="short icon" href="static/images/favicon.ico">
+</head>
+<body>
+    {% autoescape false %}
+    <div class="container">
+        {{ ration_products }}
+    </div>
+    {% endautoescape %}
+    <a href="/feast">For members of The Party only</a>
+    <script src="static/js/script.js"></script>
+</body>
+</html>

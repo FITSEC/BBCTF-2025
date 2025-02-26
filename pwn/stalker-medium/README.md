@@ -1,3 +1,3 @@
 # stalker
-### good boys snitch...
+### are you a snitch?
 FILES: chall

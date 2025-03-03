@@ -1,3 +1,3 @@
 # Literally 1948
-### We got a funny jokester in the family haha~
+### This joke is oversaturated
 FILES: chall

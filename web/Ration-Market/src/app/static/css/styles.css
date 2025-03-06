@@ -1,0 +1,115 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+header {
+    /*
+    margin: 0;
+    padding: 0;
+    /* Set the height of the header to 100% of the viewport height */
+    text-align: center;
+    background-color: orange;
+    overflow: hidden;
+}
+
+.title {
+    margin:0;
+    padding: 0;
+    padding-left: 12%;
+    display: inline;
+    float: left;
+}
+
+.signin {
+    margin: 0;
+    padding: 0;
+    padding-right: 12%;
+    display: inline;
+    float: right;
+}
+
+.credits {
+    display: inline;
+    left: 50%;
+    align-self: flex-end;
+}
+
+.message-div {
+    width: 100%;
+    text-align: center;    
+    color: white;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+img {
+    width: 100%;
+}
+
+.text-overlay {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 0;
+    font-size: 24px;
+}
+
+#header {
+    top: 0;
+}
+
+#bottom {
+    bottom: 0;
+}
+
+.container {
+    width: 100%;
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid orange;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    color: white;
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.buy-btn {
+    background: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}

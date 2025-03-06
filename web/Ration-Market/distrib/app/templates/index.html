@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ration Market</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="short icon" href="static/images/favicon.ico">
+</head>
+<body>
+    <header>
+        <h1 class="title">Ration Market</h1>
+        <h3 class="credits">Credits: <span id="credit-num">{{ creds }}</span></h3>
+        <h2 class="signin"><a href="/feast">Party Member Page</a></h2>
+    </header>
+    {% autoescape false %}
+    <div class="container">
+        {{ ration_products }}
+    </div>
+    {% endautoescape %}
+    <div class="message-div">
+        <h2 id="message"></h2>
+    </div>
+    <script src="static/js/script.js"></script>
+</body>
+</html>

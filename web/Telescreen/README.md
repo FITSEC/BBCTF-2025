@@ -11,7 +11,3 @@ Easy-Medium
 I have a feeling that this new telescreen isn't as secure as they'd like it to be, take another look at the site.
 
 Files: None
-
-# TODO
-- Make BB sayings funny
-- Make secret page funny

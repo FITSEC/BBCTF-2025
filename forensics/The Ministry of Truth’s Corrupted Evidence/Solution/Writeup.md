@@ -5,7 +5,7 @@ sudo ghex corrupted_evidence.rar
 ## Change the first 3 bytes to restore the RAR magic bytes
 Before (corrupted header):
 ```
-52 00 52 11 1A 07 00
+37 7A BC 11 1A 07 00
 ```
 After (corrected header):
 ```

@@ -9,6 +9,6 @@ def enc_flag(flag):
         freedom_text += (ord(f) ^ n).to_bytes(1, 'big')
     print(binascii.hexlify(freedom_text).decode())
 
-flag = 'bbctf{m4yb3_y0u_r3a11y_4r3_fr33}'
+flag = 'REDACTED FLAG'
 for i in range(1000000):
     enc_flag(flag)

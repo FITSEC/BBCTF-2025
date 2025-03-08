@@ -1,0 +1,124 @@
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_blog_layout -->
+<!-- https://www.smashingmagazine.com/2012/05/building-real-time-commenting-system/ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BBBB</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.0/socket.io.js"></script>
+  <script src="/static/js/comment.js"></script>
+</head>
+<body>
+
+<div class="header">
+  <h2>Big Brother Bulletin Board</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1>&emsp;🏴‍☠️ A NEW BBBB POST🏴‍☠️</h1>
+        <p class="main"><strong>Issued:</strong> Victory Day #12,453</p>
+        <p class="main"><em>Distributed by Order of Big Brother</em></p>
+      <img class="main" src="static/images/thumbnail.jpg" alt="BB Thumbnail">
+      <p class="main">Loyal citizen,</p>
+      <p class="main">
+
+        <h2>&emsp;📢 CITIZENS OF OCEANIA, REJOICE! 🎉</h2>
+
+        <p class="main">Big Brother, in his infinite wisdom, has issued <span class="important">exciting new policies</span> to enhance your daily life and improve your devotion to the Party. Failure to read will be considered thoughtcrime.</p>
+
+        <h3>&emsp;🔥 NEW AND IMPROVED TWO MINUTES HATE! 🔥</h3>
+        <p class="main">The <span class="important">Two Minutes Hate</span> is now extended to <strong>Three Minutes</strong>! More time to scream at the screen! Science confirms increased yelling improves both morale and blood pressure.</p>
+
+        <h3>&emsp;🚀 VICTORY RATIONS DOUBLED! (FROM FIVE GRAMS TO FOUR!) 🚀</h3>
+        <p class="main">Great news! The Ministry of Plenty has <span class="important">doubled</span> the chocolate ration! Citizens now receive <strong>four grams</strong> of Victory Chocolate—up from yesterday’s three grams (which was never five grams, previous reports were false).</p>
+
+        <h3>&emsp;📺 BIG BROTHER TV IS NOW MANDATORY! 📺</h3>
+        <p class="main">Exciting news: <span class="important">All telescreens will remain ON at all times!</span> No OFF button needed! Studies show citizens are 42% happier when continuously reminded of Big Brother’s love.</p>
+
+        <h3>&emsp;💬 NEWSPEAK UPDATE: FEWER WORDS, LESS THOUGHT, MORE HAPPINESS! 💬</h3>
+        <p class="main">The newest Newspeak Dictionary has <span class="important">removed 1,000 unnecessary words</span>, making speech <strong>simpler and doubleplusgood</strong>! Words like “freedom” and “privacy” have been deleted (as they never existed anyway).</p>
+
+        <h3>&emsp;💀 GOLDSTEIN SIGHTINGS—REPORT SUSPICIOUS THINKING! 💀</h3>
+        <p class="main">Oceania’s most wanted enemy, <span class="important">Emmanuel Goldstein</span>, has been spotted in multiple locations. Report any suspicious thoughts (especially your own). Remember: <strong>Good citizens don’t think—THEY OBEY.</strong></p>
+
+        <h3>&emsp;🔥 WAR WITH EASTASIA (NO, EURASIA… WAIT, NO, EASTASIA!) 🔥</h3>
+        <p class="main">Our brave soldiers continue to achieve <span class="important">glorious victories</span> against the eternal enemy—who has <strong>always</strong> been Eastasia. Update records and burn outdated documents accordingly.</p>
+
+        <p class="main"><strong>Big Brother loves you.</strong> Only traitors question the Party’s love. Now return to work. <span class="important">Happiness is mandatory.</span></p>
+
+        <p class="main">✍️ <em>DOUBLEPLUSFAITHFUL,</em><br>The Ministry of Truth</p>
+
+        <p class="note">&emsp;<i>P.S. If you enjoyed this announcement, smile at your telescreen now. If not, please report to Room 101 for attitude adjustment.</i></p>
+    </p>
+    </div>
+    <div class="card">
+      <div id="respond">
+
+        <h2>Show us your hate for the enemy down below!</h2>
+        <p>And waive the Big Brother to this page if you see any comments pushing criminal ideas!</p>
+        <form id="comment-form">
+
+          <label for="comment-author" class="required">Your name:</label>
+          <input type="text" name="comment-author" id="comment-author" value="" tabindex="1" required="required">
+
+          <label for="comment" class="required">Your message:</label>
+          <textarea name="comment" id="comment-input" rows="5" tabindex="4"  required="required"></textarea>
+
+          <button type="submit">Submit</button>
+          <button id="refresh">Refresh Feed</button>
+          <button id="waive">Waive Big Brother</button>
+        </form>
+      </div>
+    </div>
+    {% autoescape false %}
+    {% for comment in comments %}
+    <div class="card">
+      {{ comment }}
+    </div>
+    {% endfor %}
+    {% endautoescape %}
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+       <ul>
+         <li><a class="active" href="/">Home</a></li>
+         <li><a href="/">Login</a></li> <!--yes, this is only here to make things look pretty-->
+         <li><a href="/static/images/louie.jpeg">DON'T CLICK</a></li>
+      </ul> 
+    </div>
+    <div class="card">
+      <h2>Articles</h2>
+      <a class="article" href="/">
+        <h4><u>Big Brother's Newest Invention: Thought Police 2.0—Now with Mind-Reading!</u></h4>
+        <img class="side" src="/static/images/tp.jpg">
+        <p class="side">
+            The Ministry of Love proudly unveils its latest breakthrough: Thought Police 2.0, featuring cutting-edge telescreen surveillance that detects dissent before you even think it. Citizens are advised to keep their minds clean, empty, and loyal at all times.
+        </p>
+      </a>
+      <a class="article" href="/">
+        <h4><u>Record-Breaking Productivity! Worker Completes 28-Hour Shift in 24 Hours</u></h4>
+        <img class="side" src="/static/images/worker.jpg">
+        <p class="side">
+            Thanks to Party-approved time-realignment techniques, Comrade Smith of the Ministry of Truth has set a new Oceania productivity record! Officials confirm that with enough doublethink, time itself can be improved to better serve the Party.
+        </p>
+      </a>
+      <a class="article" href="/">
+        <h4><u>New Study Finds That Starving Is Actually Good for You</u></h4>
+        <img class="side" src="/static/images/hungry.jpg">
+        <p class="side">
+            Scientists at the Ministry of Plenty have confirmed that eating less increases patriotism and reduces thoughtcrime risk. The latest victory ration adjustment (now three grams of chocolate per week!) will ensure a healthier, more obedient Oceania.
+        </p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h3><i>WE see YOU</i></h3>
+</div>
+</body>
+</html>

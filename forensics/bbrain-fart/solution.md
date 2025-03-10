@@ -1,0 +1,1 @@
+uploaded the src program, use volatility's `linux.proc.Maps --pid 1798 --dump` after identifying the suspicious pid, elf would be in `pid.1798.vma.0x400000-0x401000.dmp`, then reverse engineer the flag printer to ultimately get the flag.

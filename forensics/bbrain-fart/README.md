@@ -1,4 +1,4 @@
-#BBrain Fart
+# BBrain Fart
 Hard
 
 Whoa, I found this memory dump from the future! Apparently the creator wanted to distribute an Awesome Secret™ with it, but no one ever got the Awesome Secret™ with it :(. Maybe you could solve it for him and make him happy? Perhaps this Awesome Secret™ will show us the way out from BB's thumb too...

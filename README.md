@@ -21,7 +21,7 @@ material for beginners, I hope this brings some good use to you!
 | **[The Ministry of Truth’s Corrupted Evidence](forensics/The%20Ministry%20of%20Truth’s%20Corrupted%20Evidence)**                         | forensics       | Sandesh028   | 
 | **[Big Brother’s Watchful Eye](forensics/Big%20Brother’s%20Watchful%20Eye)**                         | forensics       | Sandesh028   | 
 | **[The Brotherhood’s Ciphered Courier](forensics/The%20Brotherhood’s%20Ciphered%20Courier)**                         | forensics       | Sandesh028   | 
-| **[bbrain-fart](forensics/bbrain-fart)**                         | forensics       | Pwnut   | 
+| **[BBrain Fart](forensics/bbrain-fart)**                         | forensics       | Pwnut   | 
 | **[ROTten Rebel](crypto/ROTten-rebel)**                         | crypto       | Pwnut   | 
 | **[e6a098def38a](crypto/e6a098def38a)**                         | crypto       | Pwnut   | 
 | **[Autokrime](crypto/Autokrime)**                         | crypto       | Pwnut   | 
